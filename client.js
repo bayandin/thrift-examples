@@ -1,8 +1,8 @@
 #!/usr/bin/env node
 
-var thrift = require('./node_modules/thrift'),
-    ttransport = require('./node_modules/thrift/lib/thrift/transport.js'),
-    tprotocol = require('./node_modules/thrift/lib/thrift/protocol.js');
+var thrift = require('thrift'),
+    ttransport = require('thrift/lib/thrift/transport.js'),
+    tprotocol = require('thrift/lib/thrift/protocol.js');
 
 var Example = require('./jsgen/Example.js');
 

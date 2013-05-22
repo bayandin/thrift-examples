@@ -8,7 +8,7 @@ from thrift.server import TServer
 from pygen.example import Example
 
 
-class HelloWorldHandler:
+class ExampleHandler:
     def __init__(self):
         self.log = {}
 
@@ -19,7 +19,7 @@ class HelloWorldHandler:
         print msg
 
 
-handler = HelloWorldHandler()
+handler = ExampleHandler()
 processor = Example.Processor(handler)
 transport = TSocket.TServerSocket(port=30303)
 tfactory = TTransport.TBufferedTransportFactory()
