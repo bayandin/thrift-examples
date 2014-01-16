@@ -1,2 +1,5 @@
+### Python ###
 *.py[cod]
-.idea/
+
+### Node.js ###
+node_modules/
