@@ -1,20 +1,16 @@
-thrift-examples
-===============
+# thrift-examples
 
-Requirements
-------------
+### Requirements
 * Python: `$ pip install -r requirements.txt`,
 * Node.js: `$ npm install`,
 * Code generator: [Apache Thrift](https://thrift.apache.org/) (requires only for development).
 
-Run
----
+### Run
 * Server: `$ ./python.py`,
 * Python client: `$ ./client.py` or `$ python ./client.py`,
 * Nodejs client: `$ ./client.js` or `$ node ./client.js`.
 
-Output example
---------------
+### Output
 ```bash
 $ ./server.py
 Starting python server...
