@@ -1,5 +1,12 @@
 # thrift-examples
 
+## Generate
+
+```bash
+thrift -out pygen/ --gen py example.thrift
+thrift -out jsgen/ --gen js:node example.thrift
+```
+
 ### Requirements
 * Python: `$ pip install -r requirements.txt`,
 * Node.js: `$ npm install`,
@@ -8,7 +15,7 @@
 ### Run
 * Server: `$ ./python.py`,
 * Python client: `$ ./client.py` or `$ python ./client.py`,
-* Nodejs client: `$ ./client.js` or `$ node ./client.js`.
+* Node.js client: `$ ./client.js` or `$ node ./client.js`.
 
 ### Output
 ```bash
