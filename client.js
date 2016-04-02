@@ -1,12 +1,12 @@
 #!/usr/bin/env node
 
 var thrift = require('thrift'),
-    ttransport = require('thrift/lib/thrift/transport.js'),
-    tprotocol = require('thrift/lib/thrift/protocol.js');
+    ttransport = thrift.TBufferedTransport(),
+    tprotocol = thrift.TBinaryProtocol();
 
 var Example = require('./jsgen/Example.js');
 
-var connection = thrift.createConnection('localhost', 30303, {transport: ttransport.TBufferedTransport, protocol: tprotocol.TBinaryProtocol}),
+var connection = thrift.createConnection('localhost', 30303, {transport: ttransport, protocol: tprotocol}),
     client = thrift.createClient(Example, connection);
 
 connection.on('error', function (err) {
