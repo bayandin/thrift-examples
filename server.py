@@ -16,7 +16,7 @@ class ExampleHandler:
         return "pong"
 
     def say(self, msg):
-        print msg
+        print(msg)
 
 
 handler = ExampleHandler()
@@ -27,6 +27,6 @@ pfactory = TBinaryProtocol.TBinaryProtocolFactory()
 
 server = TServer.TSimpleServer(processor, transport, tfactory, pfactory)
 
-print "Starting python server..."
+print("Starting python server...")
 server.serve()
-print "done!"
+print("done!")

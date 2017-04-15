@@ -14,9 +14,9 @@ try:
     protocol = TBinaryProtocol.TBinaryProtocol(transport)
     client = Example.Client(protocol)
     transport.open()
-    print client.ping()
+    print(client.ping())
     client.say('Hello from Python!')
     transport.close()
 
-except Thrift.TException, tx:
-    print "%s" % tx.message
+except Thrift.TException as tx:
+    print(tx.message)
