@@ -13,7 +13,7 @@ thrift -out jsgen/ --gen js:node example.thrift
 * Code generator: [Apache Thrift](https://thrift.apache.org/) (requires only for development).
 
 ### Run
-* Server: `$ ./python.py`,
+* Server: `$ ./server.py`,
 * Python client: `$ ./client.py` or `$ python ./client.py`,
 * Node.js client: `$ ./client.js` or `$ node ./client.js`.
 
